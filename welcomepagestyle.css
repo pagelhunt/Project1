@@ -1,0 +1,77 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(57,57,149,1) 48%, rgba(0,212,255,1) 100%);
+}
+  
+button{
+  margin:0% 10% 0% 10%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+#enter1 {
+background-color:rgba(0,212,255,1) ;
+font-family: 'Sigmar One', cursive;
+font-weight: bolder;
+margin:0% 25% 0 40%;
+color: rgba(255, 0, 170, 0.7);
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 70px;
+  font-weight: bolder;
+  text-shadow: 
+      0 1px 0 #ccc,
+      0 2px 0 #c9c9c9,
+      0 3px 0 #bbb,
+      0 4px 0 #b9b9b9,
+      0 5px 0 #aaa,
+      0 6px 1px rgba(0,0,0,.1),
+      0 0 5px rgba(0,0,0,.1),
+      0 1px 3px rgba(0,0,0,.3),
+      0 3px 5px rgba(0,0,0,.2),
+      0 5px 10px rgba(0,0,0,.25),
+      0 10px 10px rgba(0,0,0,.2),
+      0 20px 20px rgba(0,0,0,.15);
+}
+
+
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  text-align: center;
+  color:blanchedalmond;
+  padding-top: 10%;
+  padding-bottom:8%;
+
+}
+
+.welcome {
+margin: 0% 20% 0% 20%;
+}
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
