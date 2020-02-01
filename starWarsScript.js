@@ -107,7 +107,7 @@ $("#button1").on("click", function () {
     $('#gender').empty();
     $('#no-results').empty();
 
-    userInput = $("#input1").val().trim();
+    userInput = $("#input1").val().trim().toLowerCase();
     console.log(`User input: ${userInput}`)
 
     // userInput = "Luke Skywalker";
@@ -116,7 +116,7 @@ $("#button1").on("click", function () {
         return (
           //  person.name === userInput
 
-          person.name.includes(userInput)
+          person.name.toLowerCase().includes(userInput)
 
         )
     });
