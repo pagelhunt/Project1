@@ -43,6 +43,46 @@ var heroName = $("<h1>");
 heroName.text(matchedSuperHero[0].name);
 heroNameDiv.append(heroName);
 $("#loreHolder").append(heroNameDiv);
+//Power stats section --------------------------------------------------------------------------------
+var powerStatsDiv = $("<div>");
+var powerStatsDurability = $("<p>")
+var powerStatsIntelligence = $("<p>")
+var powerStatsSpeed = $("<p>")
+var powerStatsStrength = $("<p>")
+var powerStatsPower = $("<p>")
+var powerStatsCombat= $("<p>")
+powerStatsDiv.addClass("powerStats powerStatsDiv")
+powerStatsIntelligence.text("Intelligence: "+ matchedSuperHero[0].powerstats.intelligence);
+powerStatsIntelligence.addClass("powerStats");
+powerStatsStrength.text("Strength: " +matchedSuperHero[0].powerstats.strength);
+powerStatsStrength.addClass("powerStats");
+powerStatsSpeed.text("Speed: " +matchedSuperHero[0].powerstats.speed);
+powerStatsSpeed.addClass("powerStats");
+powerStatsDurability.text("Durability: " +matchedSuperHero[0].powerstats.durability);
+powerStatsDurability.addClass("powerStats");
+powerStatsPower.text("Power: " +matchedSuperHero[0].powerstats.power);
+powerStatsPower.addClass("powerStats");
+powerStatsCombat.text("Combat: " +matchedSuperHero[0].powerstats.combat);
+powerStatsCombat.addClass("powerStats");
+powerStatsDiv.append(powerStatsIntelligence);
+powerStatsDiv.append(powerStatsStrength);
+powerStatsDiv.append(powerStatsSpeed);
+powerStatsDiv.append(powerStatsDurability);
+powerStatsDiv.append(powerStatsPower);
+powerStatsDiv.append(powerStatsCombat);
+$("#loreHolder").append(powerStatsDiv);
+//--------------------------------------------------------------------------------------------------
+
+
+var AppearanceDiv = $("<div>");
+var appearance = $("<p>")
+var BioDiv = $("<div>");
+var biography = $("<p>")
+var workDiv = $("<div>");
+var work = $("<p>")
+var connectionsDiv = $("<div>");
+var connections = $("<p>")
+
 }
 });
 
