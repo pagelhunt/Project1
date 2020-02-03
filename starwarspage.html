@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Star Wars Character Search</title>
+    </head>
 
-<head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <body>
+        <h1 class="center-align">Star Wars</h1>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--Need to link stylesheet <link rel="stylesheet" type="text/css" href=""> -->
-    <title>Star Wars Character Search</title>
+        <div class="container">
+            <div class="row">
+                <div class="col s6">
+                    <h3>Character Search</h3>
+                    <input type="text" id="input1" placeholder="Name">
+                    <button id="button1" class="btn-large grey darken-3 white-text">Search</button>
+                </div>
 
-</head>
+                <div class="col s6">
+                <div class="section"></div>
+                    <div id="no-results"></div>
+                    <div id="results">
+                        <h4 id="name"></h4>
+                        <h6 id="height"></h6>
+                        <h6 id="mass"></h6>
+                        <h6 id="hair_color"></h6>
+                        <h6 id="skin_color"></h6>
+                        <h6 id="eye_color"></h6>
+                        <h6 id="birth_year"></h6>
+                        <h6 id="gender"></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<body>
-
-    <label>Star Wars Character Search:</label>
-    <input type="text" id="input1" placeholder="Name">
-
-    <button id="button1">Search</button>
-    <div id="no-results"></div>
-
-    <div id="results">
-        <h1 id="name"></h1>
-        <h2 id="height"></h2>
-        <h2 id="mass"></h2>
-        <h2 id="hair_color"></h2>
-        <h2 id="skin_color"></h2>
-        <h2 id="eye_color"></h2>
-        <h2 id="birth_year"></h2>
-        <h2 id="gender"></h2>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="starWarsScript.js"></script>
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-
-</body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="starWarsScript.js"></script>
+    </body>
+</html>
