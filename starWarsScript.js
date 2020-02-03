@@ -2,7 +2,6 @@ let userInput = document.getElementById('#input1');
 let peopleArray = [];
 
 // api call to compile peopleArray on onload
-
 window.onload = function () {
 
     let queryURL = "https://swapi.co/api/people/";
@@ -16,12 +15,9 @@ window.onload = function () {
         method: "GET"
     }).then(function (response) {
 
-        //peopleArray.push(response.results);
-
         for (let i = 0; i < response.results.length; i++) {
             peopleArray.push(response.results[i]);
         }
-
 
     }).catch(function (err) {
         console.log(err);
@@ -32,12 +28,9 @@ window.onload = function () {
         method: "GET"
     }).then(function (response2) {
 
-        //peopleArray.push(response2.results);
-
         for (let i = 0; i < response2.results.length; i++) {
             peopleArray.push(response2.results[i]);
         }
-
 
     }).catch(function (err) {
         console.log(err);
@@ -48,12 +41,9 @@ window.onload = function () {
         method: "GET"
     }).then(function (response3) {
 
-        //peopleArray.push(response3.results);
-
         for (let i = 0; i < response3.results.length; i++) {
             peopleArray.push(response3.results[i]);
         }
-
 
     }).catch(function (err) {
         console.log(err);
@@ -64,12 +54,9 @@ window.onload = function () {
         method: "GET"
     }).then(function (response4) {
 
-        //peopleArray.push(response4.results);
-
         for (let i = 0; i < response4.results.length; i++) {
             peopleArray.push(response4.results[i]);
         }
-
 
     }).catch(function (err) {
         console.log(err);
@@ -80,17 +67,13 @@ window.onload = function () {
         method: "GET"
     }).then(function (response5) {
 
-        //peopleArray.push(response5.results);
-
         for (let i = 0; i < response5.results.length; i++) {
             peopleArray.push(response5.results[i]);
         }
 
-
     }).catch(function (err) {
         console.log(err);
     });
-
 };
 
 
@@ -109,8 +92,6 @@ $("#button1").on("click", function () {
 
     userInput = $("#input1").val().trim().toLowerCase();
     console.log(`User input: ${userInput}`)
-
-    // userInput = "Luke Skywalker";
 
     var match = peopleArray.filter((person) => {
         return (
