@@ -1,5 +1,13 @@
 .marvelTitle {
-    color: aliceblue;
+    background-color: bisque;
     background: url("../../Assets/Images/MarvelBackground.jpg") no-repeat center center;
   background-size: cover;
+  padding:20px;
+  color:white;
+  font-size: 100px;
 }
+
+nav {
+  background-color: rgba(248, 35, 35, 0.993);
+}
+

@@ -5,6 +5,21 @@
     <meta charset="UTF-8">
     <link rel="html" href="marvelpage.html">
     <title>Marvel Music and Sounds</title>
+
+<!---Navigation-->
+<nav class="navbar navbar-expand-sm bg-light">
+
+        
+  <ul class="navbar-nav" id="nav">
+    
+    <li class="nav-item">
+      <a class="nav-link" href="marvelpage.html">Marvel Universe</a>
+    </li>
+    
+  </ul>
+
+</nav>
+
   </head>
 
   <body>
@@ -25,25 +40,46 @@
 
       <div class="musicbox">
         <h1 class="text-center">
-          <h4>Another Theme</h4>
-        </h1>
+          <h4 class="songtitle">Spider-Man Theme (1960s Animation)</h4>
         <hr>
         <div id="musicControls" class="text-center">
-          <button class="btn btn-warning btn-xs theme-button">
-            Play another theme!</button>
-          <button class="btn btn-dark btn-xs pause-button">
+          <button class="btn btn-warning btn-xs spiderMan-button">
+            Play Spider-Man theme!</button>
+          <button class="btn btn-dark btn-xs spiderManpause-button">
            Pause Song</button>
         </div></div>
 
         <div class="musicbox">
           <h1 class="text-center">
-            <h4>Another Theme</h4>
-          </h1>
+            <h4 class="songtitle">Deadpool Theme (Deadpool Film 2016)</h4>
           <hr>
           <div id="musicControls" class="text-center">
-            <button class="btn btn-warning btn-xs theme-button">
-              Play another theme!</button>
-            <button class="btn btn-dark btn-xs pause-button">
+            <button class="btn btn-warning btn-xs deadpool-button">
+              Play Deadpool theme!</button>
+            <button class="btn btn-dark btn-xs deadpoolpause-button">
+             Pause Song</button>
+          </div></div>
+
+        <div class="musicbox">
+          <h1 class="text-center">
+            <h4 class="songtitle">Iron Man Theme</h4>
+          <hr>
+          <div id="musicControls" class="text-center">
+            <button class="btn btn-warning btn-xs ironMan-button">
+              Play Iron Man theme!</button>
+            <button class="btn btn-dark btn-xs ironManpause-button">
+             Pause Song</button>
+          </div>
+  
+        </div>
+
+        <div class="musicbox">
+            <h4 class="songtitle">The Incredible Hulk Theme (Hulk Film 2003)</h4>
+          <hr>
+          <div id="musicControls" class="text-center">
+            <button class="btn btn-warning btn-xs hulk-button">
+              Play The Incredible Hulk theme!</button>
+            <button class="btn btn-dark btn-xs hulkpause-button">
              Pause Song</button>
           </div>
   
@@ -51,27 +87,13 @@
 
         <div class="musicbox">
           <h1 class="text-center">
-            <h4>Another Theme</h4>
+            <h4 class="songtitle">Thor Theme (Thor: The Dark World Film 2013)</h4>
           </h1>
           <hr>
           <div id="musicControls" class="text-center">
-            <button class="btn btn-warning btn-xs theme-button">
-              Play another theme!</button>
-            <button class="btn btn-dark btn-xs pause-button">
-             Pause Song</button>
-          </div>
-  
-        </div>
-
-        <div class="musicbox">
-          <h1 class="text-center">
-            <h4>Another Theme</h4>
-          </h1>
-          <hr>
-          <div id="musicControls" class="text-center">
-            <button class="btn btn-warning btn-xs theme-button">
-              Play another theme!</button>
-            <button class="btn btn-dark btn-xs pause-button">
+            <button class="btn btn-warning btn-xs thor-button">
+              Play Thor theme!</button>
+            <button class="btn btn-dark btn-xs thorpause-button">
              Pause Song</button>
           </div>
 
@@ -119,6 +141,22 @@
           background: url("Assets/Images/marvelbandDazzler.jpg") center center;
           background-size: cover;
         }
+
+
+        nav {
+  background-color: rgba(243, 65, 65, 0.993);
+        }
+  
+  ul {
+    list-style:  none;
+  display: inline-block;
+}
+
+a:link{
+  text-decoration: none;
+  display: inline-block;
+}
+
         h1 {
           color: blue;
           font-family: verdana;
@@ -140,8 +178,22 @@
           text-shadow: 2px 2px rgb(172, 28, 28);
         }
 
+        .songtitle {
+        font-style: oblique;
+          font-size: 35px;
+        }
+
         .btn {
             background-color: rgb(195, 255, 255);
+            background-color: rgb(11, 3, 27);
+            border: 2px solid rgb(243, 233, 93);
+           color: rgb(243, 130, 122);
+           padding: 1% 1% 1% 1%;
+            text-align: center;
+            text-decoration: none;
+           display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
         }
 
         .redbttn {

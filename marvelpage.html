@@ -5,9 +5,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Note the stylesheet below is referencing homepage not marvel? -->
+    
     <link rel="stylesheet" type="text/css" href="./static/css/marvelpage.css">
     <title>Marvel Character Search</title>
+
+       <!---Navigation-->
+       <nav class="navbar navbar-expand-sm bg-light">
+
+        
+        <ul class="navbar-nav" id="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="homepage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="starwarspage.html">Star Wars Universe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="marvelMusicNSounds.html">Marvel Music & Sounds</a>
+          </li>
+        </ul>
+      
+      </nav>
+
+
     </head>
   
     <body>
@@ -17,11 +37,11 @@
             <div class="row">
                 <div class="col s6">
                     <h3>Character Search</h3>
-                    <input type=“text” id = searchText>
-                    <button id = searchButton class="btn-large red white-text">Search</button>
+                    <input type="text" id="input1" placeholder="Name">
+                    <button id="button1" class="btn-large grey darken-3 white-text">Search</button>
                 </div>
                 <div class="col s6">
-                  <div id = loreHolder></div>
+                    <div id = loreHolder></div>
                 </div>
                 <div id = gifHolder>
                     <button id=prevGif>Previous GIF</button>
