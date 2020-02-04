@@ -1,28 +1,31 @@
+body {
+  background: url("Assets/Images/colorcomic.jpg")  center center;
+  background-size: cover;
+  
+}
+
 
 * {
   box-sizing: border-box;
 }
 
-body {
 
-  background: rgb(2,0,36);
-  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(57,57,149,1) 48%, rgba(0,212,255,1) 100%);
-}
-  
+   
 button{
-  margin:0% 10% 0% 10%;
+  margin:0% 5% 0% 5%;
   padding-left: 3%;
   padding-right: 3%;
+  box-shadow: 5px 10px #0c05355b;
 }
 
 #enter1 {
 background-color:rgba(0,212,255,1) ;
 font-family: 'Sigmar One', cursive;
 font-weight: bolder;
-margin:0% 25% 0 40%;
+margin:-8% 30% 5% 12%;
 color: rgba(255, 0, 170, 0.7);
   font-family: 'Luckiest Guy', cursive;
-  font-size: 70px;
+  font-size: 55px;
   font-weight: bolder;
   text-shadow: 
       0 1px 0 #ccc,
@@ -42,17 +45,23 @@ color: rgba(255, 0, 170, 0.7);
 
 
 h1 {
+  
   font-family: 'Times New Roman', Times, serif;
-  font-size: 40px;
+  font-size: 35px;
   text-align: center;
-  color:blanchedalmond;
-  padding-top: 10%;
-  padding-bottom:8%;
-
-}
-
-.welcome {
-margin: 0% 20% 0% 20%;
+  color:rgb(43, 13, 179);
+  padding-top: 5%;
+  padding-bottom: 5%;
+margin: 17% 25% 0% 35%;
+text-shadow:4px 4px (43, 13, 179);
+font-weight: bolder;
+border-style: solid;
+width:50%;
+height:40%;
+border-radius: 25%;
+border-width: 10px;
+border-color: black;
+background-color: chartreuse;
 }
 /* Create two equal columns that floats next to each other */
 .column {
@@ -67,6 +76,13 @@ margin: 0% 20% 0% 20%;
   content: "";
   display: table;
   clear: both;
+}
+
+img{
+  height: 25%;
+  width:15%;
+  float:right;
+  
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
