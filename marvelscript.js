@@ -20,6 +20,7 @@ $.ajax({
 $("#searchButton").on("click", function () {
     event.preventDefault();
     loreHolder.empty();
+    superheroGifHolder.empty();
 
     var userInput = $("#searchText").val().trim();
     //giphy api stuff
