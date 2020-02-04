@@ -91,6 +91,7 @@ $("#button1").on("click", function () {
     $('#birth_year').empty();
     $('#gender').empty();
     $('#no-results').empty();
+    superheroGifHolder.empty();
     var giphyURL = "https://api.giphy.com/v1/gifs/search?q=star+wars+" + userInput + "&api_key=" + giphyKey;
     $.ajax({
         url: giphyURL,
