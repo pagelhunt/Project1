@@ -23,7 +23,7 @@ $("#searchButton").on("click", function () {
 
     var userInput = $("#searchText").val().trim();
     //giphy api stuff
-    var giphyURL = "https://api.giphy.com/v1/gifs/search?q=marvel&" + userInput.toLowerCase() + "&api_key=" + giphyKey;
+    var giphyURL = "https://api.giphy.com/v1/gifs/search?q=marvel+" + userInput.toLowerCase() + "&api_key=" + giphyKey;
     $.ajax({
         url: giphyURL,
         method: "GET"
