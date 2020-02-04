@@ -2,6 +2,7 @@ let userInput = document.getElementById('#input1');
 let peopleArray = [];
 var giphyKey = apiKey.myKey;
 gifIndex = 0;
+var superheroGifHolder = $("#gifHolder");
 
 // api call to compile peopleArray on onload
 window.onload = function () {
@@ -100,7 +101,7 @@ $("#button1").on("click", function () {
         console.log(response);
         
         var superheroGif = $("<img>");
-        var superheroGifHolder = $("#gifHolder");
+        
         superheroGif.attr("src", response.data[gifIndex].images.original.url);
         superheroGifHolder.append(superheroGif);
         $("#prevGif").on("click",function()

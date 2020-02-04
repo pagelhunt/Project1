@@ -4,6 +4,7 @@ var loreHolder = $("#loreHolder");
 var giphyKey = apiKey.myKey;
 var superHeroArray = [];
 var gifIndex = 0;
+var superheroGifHolder = $("#gifHolder");
 let queryURL = "https://akabab.github.io/superhero-api/api/all.json";
 //grabbing all superheroes on db because no good endpoints to use
 $.ajax({
@@ -32,7 +33,7 @@ $("#searchButton").on("click", function () {
         console.log(response);
 
         var superheroGif = $("<img>");
-        var superheroGifHolder = $("#gifHolder");
+        
         superheroGif.attr("src", response.data[gifIndex].images.original.url);
         superheroGifHolder.append(superheroGif);
         $("#prevGif").on("click",function()
