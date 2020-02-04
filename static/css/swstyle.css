@@ -1,0 +1,12 @@
+nav{
+    background-color: slateblue;
+}
+
+.starwarsTitle {
+    
+    background: url("../../Assets/Images/StarBackground.jpg") no-repeat center center;
+  background-size: cover;
+  padding:20px;
+  color:white;
+  font-size: 100px;
+}

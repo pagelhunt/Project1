@@ -21,6 +21,9 @@
         var audioElement = document.createElement("audio");
         audioElement.setAttribute("src", "assets/music-sounds/ChewbaccaNoise.mp3");
 
+        var audioElement2 = document.createElement("audio");
+        audioElement2.setAttribute("src", "assets/music-sounds/LightsaberTurnOn.mp3");
+
         // Music N Sounds Buttons
         $(".sw-button").on("click", function() {
           swThemeAudio.play();
@@ -57,9 +60,13 @@
           hotPursuitAudio.pause();
         });
 
-        $(".redbttn").on("click",function(){
+        $(".wookiebttn").on("click",function(){
           audioElement.play();
           });
+
+          $(".lightsaberbttn").on("click",function(){
+            audioElement2.play();
+            });
         });
     
 
