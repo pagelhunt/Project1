@@ -5,7 +5,20 @@
     <meta charset="UTF-8">
     <title>Star Wars Music and Sounds</title>
 
+<!---Navigation-->
+<nav class="navbar navbar-expand-sm bg-light">
 
+        
+  <ul class="navbar-nav" id="nav">
+    <li class="nav-item">
+      
+    <li class="nav-item">
+      <a class="nav-link" href="starwarspage.html">Star Wars Universe</a>
+    </li>
+   
+  </ul>
+
+</nav>
 
     
 
@@ -30,9 +43,9 @@
         <h4 class=songtitle>Star Wars Main Theme</h4>
       <hr>
       <div id="musicControls">
-        <button class="btn btn-warning btn-xs swtheme-button">
+        <button class="btn btn-warning btn-xs sw-button">
           Play Star Wars main theme!</button>
-        <button class="btn btn-dark btn-xs swthemepause-button">
+        <button class="btn btn-dark btn-xs swpause-button">
          Pause Song</button>
       </div></div>
 
@@ -121,6 +134,21 @@
           background: url("Assets/Images/StarBackground.jpg") center center;
           background-size: cover;
         }
+
+        nav {
+  background-color: slateblue;
+        }
+  
+  ul {
+    list-style:  none;
+  display: inline-block;
+}
+
+a:link{
+  text-decoration: none;
+  display: inline-block;
+}
+
         h1 {
           color: blue;
           font-family: verdana;

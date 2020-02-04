@@ -3,6 +3,9 @@
 
 
         // Gets Link for Music N Sounds
+        var swThemeAudio = document.createElement("audio");
+        swThemeAudio.setAttribute("src", "assets/music-sounds/StarWarsMainTheme.mp3");
+
         var darthVaderAudio = document.createElement("audio");
         darthVaderAudio.setAttribute("src", "assets/music-sounds/DarthVader.mp3");
 
@@ -19,6 +22,13 @@
         audioElement.setAttribute("src", "assets/music-sounds/ChewbaccaNoise.mp3");
 
         // Music N Sounds Buttons
+        $(".sw-button").on("click", function() {
+          swThemeAudio.play();
+        });
+        $(".swpause-button").on("click", function() {
+          swThemeAudio.pause();
+        });
+
         $(".darth-button").on("click", function() {
           darthVaderAudio.play();
         });
