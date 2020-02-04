@@ -1,5 +1,7 @@
 let userInput = document.getElementById('#input1');
 let peopleArray = [];
+var giphyKey = apiKey.myKey;
+gifIndex = 0;
 
 // api call to compile peopleArray on onload
 window.onload = function () {
@@ -9,6 +11,7 @@ window.onload = function () {
     let queryURL3 = "https://swapi.co/api/people/?page=3";
     let queryURL4 = "https://swapi.co/api/people/?page=4";
     let queryURL5 = "https://swapi.co/api/people/?page=5";
+    
 
     $.ajax({
         url: queryURL,
@@ -76,7 +79,6 @@ window.onload = function () {
     });
 };
 
-
 // search button
 $("#button1").on("click", function () {
 
@@ -89,8 +91,39 @@ $("#button1").on("click", function () {
     $('#birth_year').empty();
     $('#gender').empty();
     $('#no-results').empty();
+    var giphyURL = "https://api.giphy.com/v1/gifs/search?q=star+wars&" + userInput + "&api_key=" + giphyKey;
+    $.ajax({
+        url: giphyURL,
+        method: "GET"
+    }).then(function (response) {
+        console.log(response);
+        
+        var superheroGif = $("<img>");
+        var superheroGifHolder = $("#gifHolder");
+        superheroGif.attr("src", response.data[gifIndex].images.original.url);
+        superheroGifHolder.append(superheroGif);
+        $("#prevGif").on("click",function()
+            {
+                if(gifIndex > 0)
+                {
+                    gifIndex--;
+                    superheroGif.attr("src", response.data[gifIndex].images.original.url);
+                }
+            }
+        )
+    
+    
+        $("#nextGif").on("click", function()
+            {
+                gifIndex++;
+                superheroGif.attr("src", response.data[gifIndex].images.original.url);
+            }
+        )
+    
+    });
 
     userInput = $("#input1").val().trim().toLowerCase();
+    
     console.log(`User input: ${userInput}`)
 
     var match = peopleArray.filter((person) => {
