@@ -1,0 +1,5 @@
+.marvelTitle {
+    background-color: bisque;
+    background: url("../../Assets/Images/MarvelBackground.jpg") no-repeat center center;
+  background-size: cover;
+}
