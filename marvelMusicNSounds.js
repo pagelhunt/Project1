@@ -18,7 +18,22 @@ $(document).ready(function() {
     thorAudio.setAttribute("src", "Assets/music-Sounds/ThorTheDarkWorld.mp3");
 
     var audioElement = document.createElement("audio");
-    audioElement.setAttribute("src", "Assets/music-Sounds/evilLaughSoundEffect.mp3");
+    audioElement.setAttribute("src", "Assets/music-Sounds/ImSpiderMan.mp3");
+
+    var audioElement2 = document.createElement("audio");
+    audioElement2.setAttribute("src", "Assets/music-Sounds/fly.mp3");
+
+    var audioElement3 = document.createElement("audio");
+    audioElement3.setAttribute("src", "Assets/music-Sounds/Greatpower.mp3");
+
+    var audioElement4 = document.createElement("audio");
+    audioElement4.setAttribute("src", "Assets/music-Sounds/whoIAM.mp3");
+
+    var audioElement5 = document.createElement("audio");
+    audioElement5.setAttribute("src", "Assets/music-Sounds/cab.mp3");
+
+    var audioElement6 = document.createElement("audio");
+    audioElement6.setAttribute("src", "Assets/music-Sounds/clobberintime.mp3");
 
     // Music N Sounds Buttons
     $(".spiderMan-button").on("click", function() {
@@ -57,7 +72,27 @@ $(document).ready(function() {
     });
  
 
-  $(".redbttn").on("click",function(){
+  $(".spiderbttn").on("click",function(){
     audioElement.play();
     });
+
+    $(".flybttn").on("click",function(){
+      audioElement2.play();
+      });
+
+      $(".powerbttn").on("click",function(){
+        audioElement3.play();
+        });
+
+        $(".whobttn").on("click",function(){
+          audioElement4.play();
+          });
+
+          $(".cabbttn").on("click",function(){
+            audioElement5.play();
+            });
+
+            $(".clobberbttn").on("click",function(){
+              audioElement6.play();
+              });
   });
