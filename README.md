@@ -10,7 +10,7 @@ This is an application that provides Star Wars and Marvel information and entert
 
 A Star Wars and Marvel Website  
 
-Live application link: https://github.io/Project1/ 
+Live application link: https://pagelhunt.github.io/Project1/ 
 
 Directions:  
 1. Enter site  
