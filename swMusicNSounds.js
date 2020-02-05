@@ -24,6 +24,18 @@
         var audioElement2 = document.createElement("audio");
         audioElement2.setAttribute("src", "assets/music-sounds/LightsaberTurnOn.mp3");
 
+        var audioElement3 = document.createElement("audio");
+        audioElement3.setAttribute("src", "Assets/music-Sounds/LightsaberTurnOff.mp3");
+
+        var audioElement4 = document.createElement("audio");
+        audioElement4.setAttribute("src", "Assets/music-Sounds/LightsaberClash.mp3");
+
+        var audioElement5 = document.createElement("audio");
+        audioElement5.setAttribute("src", "Assets/music-Sounds/DarkSide.mp3");
+
+        var audioElement6 = document.createElement("audio");
+        audioElement6.setAttribute("src", "Assets/music-Sounds/Beep.mp3");
+
         // Music N Sounds Buttons
         $(".sw-button").on("click", function() {
           swThemeAudio.play();
@@ -67,7 +79,23 @@
           $(".lightsaberbttn").on("click",function(){
             audioElement2.play();
             });
-        });
+
+            $(".lightsaberbttn2").on("click",function(){
+              audioElement3.play();
+              });
+
+              $(".lightsaberbttn3").on("click",function(){
+                audioElement4.play();
+                });
+
+                $(".DarkSidebttn").on("click",function(){
+                  audioElement5.play();
+                  });
+
+                  $(".beepbttn").on("click",function(){
+                    audioElement6.play();
+                    });
+          });
     
 
      
