@@ -7,4 +7,4 @@ $(".marEnterBttn").on("click",function(){
     $(".swEnterBttn").on("click",function(){
         location.href="starwarspage.html";
         });
-    }
+    });
