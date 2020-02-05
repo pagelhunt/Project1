@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
 $(".marEnterBttn").on("click",function(){
     location.href="marvelpage.html";
     });
@@ -5,3 +7,4 @@ $(".marEnterBttn").on("click",function(){
     $(".swEnterBttn").on("click",function(){
         location.href="starwarspage.html";
         });
+    }
